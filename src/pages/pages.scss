@@ -1,0 +1,100 @@
+.home {
+  background: url('../assets/images/bg_2400x1600.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  .contents { 
+    text-align: center;
+    color: white;
+    padding-top: 4em;
+  }
+  #name {
+    font-size: 4.5em;
+    line-height: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  p.desc {
+    width: 100%;
+    font-size: 2em;
+    padding: .5em 1em .5em 1em;
+  }
+  .window {
+    height: 98vh;
+    width: 95vw;
+    position: absolute;
+    border: 0;
+    box-sizing: border-box;
+    margin: .5rem;
+    border: 1px solid white;
+    border-radius: 300px 300px 0 0;
+    // -webkit-animation: drawBorderFromCenter 4s;
+    // &::before,
+    // &::after {
+    //   box-sizing: inherit;
+    //   content: '';
+    //   position: absolute;
+    //   width: 0;
+    //   border-radius: 300px 300px 0 0;
+    //   height: 0;
+    // }
+  }
+}
+
+// .window.draw {
+  // transition: color 0.25s;
+
+  // &::before,
+  // &::after {
+  //   // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+  //   border: 1px solid transparent;
+  //   width: 100%;  // <==== Change this from 0 to 100%
+  //   height: 100%;  // <==== Change this from 0 to 100%
+  // }
+
+  // // This covers the top & right borders (expands right, then down)
+  // &::before {
+  //   top: 0;
+  //   left: 0;
+  //   border-radius: 300px 300px 0 0;  
+  //   border-top-color: #fff; // Make borders visible
+  //   border-right-color: #fff;
+  //   transition: width 0.25s ease-out,
+  //               height 0.25s ease-out 0.25s; 
+  // }
+  
+  // &::after {
+  //   bottom: 0;
+  //   right: 0;
+  //   border-radius: 300px 300px 0 0;  
+  //   border-bottom-color: #fff; 
+  //   border-left-color: #fff;
+  //   transition: border-color .5s ease-out 0.5s, 
+  //   width 0.25s ease-out 0.5s, 
+  //   height 0.25s ease-out 0.75s; 
+  // }
+// }
+
+
+@media (min-width: 768px) {
+  .home {
+    p.desc {
+      width: 450px;
+      font-size: 2em;
+      padding-top: .5em;
+    }
+    .contents {
+      text-align: unset;
+      padding: 7.8em 0 0 5em;
+    }
+    #name {
+      font-size: 8em;
+      font-weight: 700;
+      line-height: 1em;
+      letter-spacing: 5px;
+    }
+    .window {
+      width: 40vw;
+    }
+  }
+}

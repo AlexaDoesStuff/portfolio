@@ -1,0 +1,138 @@
+.disc-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  .circle {
+    height: 120px;
+    width: 120px;
+    background-color: #FFC132;
+    box-shadow: 0 0 20px 10px #FFC132;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .name {
+    font-family: 'Cormorant Garamond';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .disc-container {
+    margin-top: -9em;
+  }
+  .circle {
+    height: 150px !important;
+    width: 150px !important;
+    .clicked {
+      animation: msPulseEffect .5s ease;
+    }
+    &::before,
+    &::after {
+      content: '';
+      border: 1px solid transparent;
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+    }
+    &:hover::before {
+      content: '';
+      border-top-color: #000; // Show borders
+      border-right-color: #000;
+      border-bottom-color: #000;
+  
+      transition:
+        border-top-color 0.15s linear, // Stagger border appearances
+        border-right-color 0.15s linear 0.10s,
+        border-bottom-color 0.15s linear 0.20s;
+    }
+    &:hover::after {
+      content: '';
+      border-top: 1px solid #000; // Shows border
+      border-left-width: 1px; // Solid edges, invisible borders
+      border-right-width: 1px; // Solid edges, invisible borders
+      transform: rotate(270deg); // Rotate around circle
+      transition:
+        transform 0.4s linear 0s,
+        border-left-width 0s linear 0.35s; // Solid edge post-rotation
+    }
+  }
+
+  // Separate illustrations for line 
+
+  .disc:nth-child(1), .disc:nth-child(3) { 
+    margin-top: -7rem; 
+    .line {
+      height: 130px;
+      width: 1px;
+      background-color: black;
+      position: absolute;
+      margin-top: 8em;
+      transition: all .5s ease;
+    }
+    .name {
+      margin-top: 6em;
+      transition: all .5s ease;
+    }
+    .line.hover {
+      margin-top: 10em;
+      transform: scaleY(1.2);
+      transition: all .5s ease;
+    }
+    .name.hover {
+      margin-top: 5em;
+      transition: all .5s ease;
+      font-weight: 700;
+    }
+  }
+
+  .disc:nth-child(2) {
+    .name { 
+      margin-top: -15em; 
+      transition: all .5s ease;
+    }
+    .line {
+      height: 130px;
+      width: 1px;
+      background-color: black;
+      position: absolute;
+      margin-top: -8em;
+      transition: all .5s ease;
+    }
+    .line.hover {
+      margin-top: -9em;
+      transform: scaleY(1.2);
+      transition: all .5s ease;
+    }
+    .name.hover {
+      margin-top: -14em;
+      transition: all .5s ease;
+      font-weight: 700;
+    }
+  }
+}
+
+// Animations
+// Click pulse 
+@keyframes msPulseEffect {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+100% {
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+}
