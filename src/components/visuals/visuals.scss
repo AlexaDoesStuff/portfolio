@@ -29,6 +29,24 @@
   }
 }
 
+.disc:nth-child(1), .disc:nth-child(3) { 
+  .line {
+    height: 100px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    margin-top: 6em;
+
+  }
+  .name {
+    margin-top: 3.5em;
+  }
+}
+
+.disc:nth-child(2) {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 @media (min-width: 768px) {
   .disc-container {
@@ -101,6 +119,7 @@
   }
 
   .disc:nth-child(2) {
+    display: unset;
     .name { 
       margin-top: -15em; 
       transition: all .5s ease;
@@ -135,4 +154,8 @@
 100% {
     box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5);
   }
+}
+
+@keyframes growOut {
+  
 }
