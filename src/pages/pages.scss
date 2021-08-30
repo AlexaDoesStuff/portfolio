@@ -75,6 +75,16 @@
   // }
 // }
 
+//Bg for all pages
+.resume,
+.volunteer,
+.contact {
+  background: url('../assets/images/bg_2400x1600.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 
 @media (min-width: 768px) {
   .home {

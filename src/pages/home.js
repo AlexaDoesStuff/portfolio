@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Disc from '../components/visuals/disc.js';
 
@@ -7,7 +6,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      discs: ['Resume', 'Volunteer', 'Contact'],
+      discs: ['resume', 'volunteer', 'contact'],
     }
     this.createDisc = this.createDisc.bind(this);
   }  
