@@ -31,8 +31,8 @@ const PageContent = ( props ) => {
         <div className="totalCount">{total}</div>
       </div>
       <div className="information col-md-10">
-        {info[current] ? info[current].date : ''} <br/>
-        {info[current] ? <b>{info[current].title }</b>: ''} <br />
+        {info[current] ? info[current].date : ''}
+        {info[current] ? <div dangerouslySetInnerHTML={ {__html: info[current].title} }></div> : ''} <br />
         {info[current] ? <b>{info[current].company}</b> : ''} <br /> <br />
         {info[current] ? info[current].duties.map(txt => <span>{txt}<br /></span>) : ''}
       </div>

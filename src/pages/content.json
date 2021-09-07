@@ -37,7 +37,7 @@
       "descriptions": [
         { 
           "date": "",
-          "title": "Midori Gal",
+          "title": "<a href=\"https://midorigal.com/\">Midori Gal</a>",
           "company": "Tokyo, Japan",
           "duties": 
             ["Independent full stack development of nature archive built in Gatsby, GraphQL, ReactJS, Wordpress with instance hosting on Digital Ocean and Netlify."
@@ -45,7 +45,7 @@
         }, 
         { 
           "date": "",
-          "title": "Kawaguchi Farmer's Market",
+          "title": "<a href=\"https://oks-afmk.com/\">Kawaguchi Farmer's Market</a>",
           "company": "Kawaguchi, Saitama, Japan",
           "duties": ["Stall hand and event coordination support for local farmer's market in Kawaguchi, Saitama."]
         },
@@ -57,7 +57,7 @@
         },
         { 
           "date": "",
-          "title": "Seniousha Saitama",
+          "title": "<a href=\"https://www.seinousha.com/\">Seinousha Saitama</a>",
           "company": "Kazou, Saitama",
           "duties": ["Farming relief aide for community farm in Kazo, Saitama. Helped elderly workers with field maintenance, summer fruit harvesting, etc."]
         },

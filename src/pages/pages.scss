@@ -86,10 +86,13 @@
 }
 
 .more {
+  .content-block {
+    flex-direction: column;
+  }
   .page-header .title {
     line-height: .9em;
   }
-  .more-content {
+  .blurb {
     margin: 1em 0 0 .9em;
     color: white;
     font-size: 1.3em;
@@ -120,7 +123,6 @@
 }
 
 
-
 @media (min-width: 768px) {
   .home {
     p.desc {
@@ -144,10 +146,13 @@
   }
 
   .more {
+    .content-block {
+      flex-direction: row;
+    }
     .page-header .title {
       line-height: .9em;
     }
-    .more-content {
+    .blurb {
       margin: 2em 0 0 8em;
       color: white;
       font-size: 1em;

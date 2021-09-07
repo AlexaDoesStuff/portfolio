@@ -108,94 +108,105 @@ img#icon {
   }
 }
 
-  .page-content {
-    .counter { 
-      position: absolute;
-      bottom: 0;
-      margin: 1em;
-      font-size: 1.5em;
-      color: white;
-    }
-    .information {
-      padding-left: 1em;
-      padding-right: 1em;
-      font-size: 18px;
-      height: 350px;
-      color: white;
-    }
-    .curCount {
-      bottom: 0;
-      left: 0;
-      height: 50%;
-      position: absolute;
-      // margin-right: 5em;
-    }
-    .iterator {
-      min-width: 100px;
-      height: 120px;
-      background: 
-      linear-gradient(to top left,
-      rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0) calc(50% - 1px),
-      rgba(255,255,255,1) 50%,
-      rgba(255,255,255,0) calc(50% + 1px),
-      rgba(255,255,255,0) 100%);
-    }
-    .totalCount {
-      bottom: 0;
-      right: 0;
-      width: 65%;
-      position: absolute;
-    }
-    .buttons {
-      padding-left: 2em;
-      margin-top: 1em;
-      position: relative;
-      margin-left: 1em;
-      max-width: 900px;
-      width: 90%;
-    }
-    .back-btn {
-      position: absolute;
-      left: 0;
-      border: none;
-      background: unset;
-      display: flex;
-      align-items: center;
-      font-family: 'Cormorant Garamond';
-      font-style: italic;
-      font-weight: 600;
-      color: white;
-    }
-    .next-btn {
-      position: absolute;
-      right: 0;
-      border: none;
-      background: unset;
-      display: flex;
-      align-items: center;
-      font-family: 'Cormorant Garamond';
-      font-style: italic;
-      font-weight: 600;
-      color: white;
-    }
-    .left-line {
-      width: 70px;
-      height: 1px;
-      background-color: white;
-      margin-right: 20px;
-    }      
-    .right-line {
-      width: 70px;
-      height: 1px;
-      background-color: white;
-      margin-left: 20px;
-    }
+.page-content {
+  .counter { 
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+    font-size: 1.5em;
+    color: white;
   }
+  .information {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 18px;
+    height: 350px;
+    color: white;
+  }
+  .curCount {
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    position: absolute;
+    // margin-right: 5em;
+  }
+  .iterator {
+    min-width: 100px;
+    height: 120px;
+    background: 
+    linear-gradient(to top left,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0) calc(50% - 1px),
+    rgba(255,255,255,1) 50%,
+    rgba(255,255,255,0) calc(50% + 1px),
+    rgba(255,255,255,0) 100%);
+  }
+  .totalCount {
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    position: absolute;
+  }
+  .buttons {
+    padding-left: 2em;
+    margin-top: 1em;
+    position: relative;
+    margin-left: 1em;
+    max-width: 900px;
+    width: 90%;
+  }
+  .back-btn {
+    position: absolute;
+    left: 0;
+    border: none;
+    background: unset;
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+  }
+  .next-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: unset;
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+  }
+  .left-line {
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    margin-right: 20px;
+  }      
+  .right-line {
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    margin-left: 20px;
+  }
+}
 
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  a {
+    color: white;
+  }
+}
 
-
-
+.icon-img {
+  width: 40px;
+  margin: 1em 0 0 1em;
+}
+  
 @media (min-width: 768px) {
   .disc-container {
     margin-top: -9em;
@@ -405,6 +416,10 @@ img#icon {
         margin-left: 20px;
       }
     }
+  }
+
+  .icon-img {
+    margin: 2em;
   }
 }
 
