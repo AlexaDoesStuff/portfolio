@@ -6,7 +6,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      discs: ['resume', 'volunteer', 'contact'],
+      discs: ['resume', 'volunteer', 'more'],
     }
     this.createDisc = this.createDisc.bind(this);
   }  

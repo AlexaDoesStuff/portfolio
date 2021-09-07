@@ -1,0 +1,73 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "category": "resume",
+      "descriptions": [
+        { 
+          "date": "Dec 2019 - Aug 2021",
+          "title": "(Lead) Front End Engineer",
+          "company": "Liferay, Tokyo, Japan",
+          "duties": 
+            ["Front-End Engineer, Lead, in large Agile projects for Japanese clientele. ",
+              "Created software for the Japanese Ministry of Defense, Kubota Corporation, JP Post",
+              "Worked in ReactJS to connect headless API's in an Agile environment to provide full-stack solutions.",
+              "Wireframed concepts in Figma and brought to life with JavaScript, HTML/SCSS."
+            ]
+        }, 
+        { 
+          "date": "Jan 2019 - May 2019",
+          "title": "Front End Engineer (I)",
+          "company": "Marvel Entertainment, New York, New York",
+          "duties": ["As a member of the Front End Engineer Team for Marvel NYC, developed components for use on Marvel Entertainment production sites with ReactJS, HTML/SCSS, JavaScript.",
+          "Mentored with the leading Engineer to learn best practices for full lifecycle web development through Jira and GitHub."]
+        },
+        { 
+          "date": "June 2018 - Sept 2018",
+          "title": "Applications Developer (I)",
+          "company": "IBM, Armonk, New York; Southbury, Connecticut",
+          "duties": ["Worked in an Agile team for the IBM CIO to create web applications with TypeScript, JavaScript, HTML/CSS, D3.",
+          "Engineered data for website usage using Python, Jupyter Notebook."]
+        } 
+      ]
+    },
+    {
+      "id": 1,
+      "category": "volunteer",
+      "descriptions": [
+        { 
+          "date": "",
+          "title": "Midori Gal",
+          "company": "Tokyo, Japan",
+          "duties": 
+            ["Independent full stack development of nature archive built in Gatsby, GraphQL, ReactJS, Wordpress with instance hosting on Digital Ocean and Netlify."
+            ]
+        }, 
+        { 
+          "date": "",
+          "title": "Kawaguchi Farmer's Market",
+          "company": "Kawaguchi, Saitama, Japan",
+          "duties": ["Stall hand and event coordination support for local farmer's market in Kawaguchi, Saitama."]
+        },
+        { 
+          "date": "",
+          "title": "Nature Conservation Society of Japan Osaka Chapter",
+          "company": "Osaka, Japan",
+          "duties": ["Farming relief aide word staffhand in multiple farms across the Osaka region of Japan."]
+        },
+        { 
+          "date": "",
+          "title": "Seniousha Saitama",
+          "company": "Kazou, Saitama",
+          "duties": ["Farming relief aide for community farm in Kazo, Saitama. Helped elderly workers with field maintenance, summer fruit harvesting, etc."]
+        },
+        { 
+          "date": "",
+          "title": "Three Jewels",
+          "company": "NYC, New York",
+          "duties": ["Pro-bono Squarespace development support for non-profit wellness studio in New York City."]
+        }  
+      ]
+    }
+  ]
+}

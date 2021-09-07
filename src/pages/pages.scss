@@ -78,12 +78,47 @@
 //Bg for all pages
 .resume,
 .volunteer,
-.contact {
+.more {
   background: url('../assets/images/bg_2400x1600.png');
   background-size: cover;
   width: 100vw;
   height: 100vh;
 }
+
+.more {
+  .page-header .title {
+    line-height: .9em;
+  }
+  .more-content {
+    margin: 1em 0 0 .9em;
+    color: white;
+    font-size: 1.3em;
+    width: 90%;
+    max-height: 350px;
+    overflow-y: scroll;
+  }
+}
+
+.more .art {
+  background: linear-gradient(to right, #D2FACD, #CDFAEC , #F8FACD, #FACDCD, #ECCDFA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 5s ease-in-out infinite;
+  background-size: 400% 100%;
+
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
 
 
 @media (min-width: 768px) {
@@ -105,6 +140,19 @@
     }
     .window {
       width: 40vw;
+    }
+  }
+
+  .more {
+    .page-header .title {
+      line-height: .9em;
+    }
+    .more-content {
+      margin: 2em 0 0 8em;
+      color: white;
+      font-size: 1em;
+      width: 100%;
+      max-width: 700px;
     }
   }
 }

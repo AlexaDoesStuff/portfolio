@@ -14,7 +14,7 @@ import {
 import Home from './pages/home.js'
 import Resume from './pages/resume.js'
 import Volunteer from './pages/volunteer.js'
-import Contact from './pages/contact.js'
+import More from './pages/more.js'
 
 import '../src/pages/pages.scss'
 
@@ -22,7 +22,7 @@ const routes = [
   { path: '/', name: 'Home', Component: Home },
   { path: '/resume', name: 'Resume', Component: Resume },
   { path: '/volunteer', name: 'Volunteer', Component: Volunteer },
-  { path: '/contact', name: 'Contact', Component: Contact },
+  { path: '/more', name: 'More', Component: More },
 ]
 
 export default function App() {
