@@ -3,7 +3,7 @@ import { Route, Switch, NavLink } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Link,
   Redirect,
   useLocation,
