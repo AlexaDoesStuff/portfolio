@@ -22,21 +22,33 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        <div className="window">
-          
+        <div className="window col-md-5">
+          <div className="name-desc">
+            <span id="name">
+              <span id="first">Alexa</span> < br/>
+              <span id="last">Javellana</span>
+            </span>
+            <p className="desc"> 
+              A front-end engineer with a love for 
+              beautiful things. Let’s create new 
+              experiences in this digital world.
+            </p>
+          </div>
         </div>
-        <div className="contents">
-          <span id="name">
-            <span id="first">Alexa</span> < br/>
-            <span id="last">Javellana</span>
-          </span>
-          <p className="desc"> 
-            A front-end engineer with a love for 
-            beautiful things. Let’s create new 
-            experiences in this digital world.
-          </p>
-        </div>
-        <div className="disc-container col-md-8 float-md-end">
+        {/* <div className="contents">
+          <div className="name-desc">
+            <span id="name">
+              <span id="first">Alexa</span> < br/>
+              <span id="last">Javellana</span>
+            </span>
+            <p className="desc"> 
+              A front-end engineer with a love for 
+              beautiful things. Let’s create new 
+              experiences in this digital world.
+            </p>
+          </div>
+        </div> */}
+        <div className="disc-container col col-md-6 float-md-end">
           {this.createDisc(this.state.discs)}
         </div>
       </div>

@@ -10,15 +10,17 @@ import './pages.scss';
 const Resume = ( ) => {
 
   return (
-    <div className="resume">
-      <div>
-        <PageHeader name={"Resume"} />
-        <HomeButton />
+    <>
+    <HomeButton />
+      <div className="resume">
+        <div>
+          <PageHeader name={"Resume"} />
+        </div>
+        <div>
+          <PageContent type="resume"/>
+        </div>
       </div>
-      <div>
-        <PageContent type="resume"/>
-      </div>
-    </div>
+    </>
   );
 };
 

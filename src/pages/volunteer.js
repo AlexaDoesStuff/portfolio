@@ -9,16 +9,15 @@ import './pages.scss';
 
 const Volunteer = ( ) => {
   return (
-    <div className="volunteer">
-      <div>
+    <>
+      <HomeButton />
+      <div className="volunteer">
         <PageHeader name={"Volunteer"} />
-        <HomeButton />
+        <div>
+          <PageContent type="volunteer"/>
+        </div>
       </div>
-      <div>
-        <PageContent type="volunteer"/>
-      </div>
-    </div>
-    
+    </>
   );
 };
 

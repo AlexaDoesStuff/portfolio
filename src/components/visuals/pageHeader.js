@@ -8,8 +8,8 @@ const PageHeader = ( props ) => {
   return (
     <div className="page-header">
       <div className="head">
-        <span className="title">{name}</span>
-        <div className="diagonal"></div>
+        <div className="title col-md-8">{name}</div>
+        <div className="diagonal col-md-4"></div>
       </div>
     </div>
   );

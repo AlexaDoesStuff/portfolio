@@ -13,6 +13,9 @@ body {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+
+  background: url('./assets/images/bg_2400x1600.png');
+  background-size: cover;
 }
 
 code {

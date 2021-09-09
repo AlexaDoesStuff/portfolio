@@ -1,10 +1,13 @@
 .disc-container {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2em;
+  width: 100%;
   .circle {
-    height: 120px;
-    width: 120px;
+    height: 7em;
+    width: 7em;
     background-color: #FFC132;
     box-shadow: 0 0 20px 10px #FFC132;
     border-radius: 100%;
@@ -63,7 +66,7 @@
   border: 1px solid black;
   top: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   margin: 5px;
   border-radius: 50%;
   display: flex;
@@ -82,7 +85,7 @@ img#icon {
     color: white;
     font-weight: 600;
     text-transform: uppercase;
-    padding-top: 20px;
+    // padding-top: 20px;
     // line-height: 1em;
   }
   .head {
@@ -109,7 +112,7 @@ img#icon {
 
 .page-content {
   .counter { 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin: 1em;
     font-size: 1.5em;
@@ -125,13 +128,14 @@ img#icon {
   .curCount {
     bottom: 0;
     left: 0;
-    height: 50%;
+    height: 10vh;
+    /* width: 50vw; */
     position: absolute;
     // margin-right: 5em;
   }
   .iterator {
-    min-width: 100px;
-    height: 120px;
+    width: 8vw;
+    height: 9vh;
     background: 
     linear-gradient(to top left,
     rgba(255,255,255,0) 0%,
@@ -143,12 +147,12 @@ img#icon {
   .totalCount {
     bottom: 0;
     right: 0;
-    width: 65%;
+    width: 3vw;
     position: absolute;
   }
   .buttons {
     padding-left: 2em;
-    margin-top: 1em;
+    margin-top: 12vh;
     position: relative;
     margin-left: 1em;
     max-width: 900px;
@@ -206,13 +210,19 @@ img#icon {
   margin: 1em 0 0 1em;
 }
   
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .disc-container {
-    margin-top: -9em;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: unset;
+    margin-bottom: 0;
   }
   .circle {
-    height: 150px !important;
-    width: 150px !important;
+    width: 10vw !important;
+    height: 10vw !important;
+    max-width: 150px;
+    max-height: 150px;
     .clicked {
       animation: msPulseEffect .5s ease;
     }
@@ -221,8 +231,10 @@ img#icon {
       content: '';
       border: 1px solid transparent;
       border-radius: 100%;
-      width: 150px;
-      height: 150px;
+      width: 10vw;
+      height: 10vw;
+      max-width: 150px;
+      max-height: 150px;
       position: absolute;
     }
     &:hover::before {
@@ -305,18 +317,18 @@ img#icon {
   .page-header {
     .head {
       display: flex;
+      // padding: unset;
     }
     .title {
-      font-size: 10rem;
-      margin: .25em .5em 0 .7em;
+      font-size: 9vw;
       margin-bottom: -15px;
     }
     .diagonal {
       position: absolute;
-      min-width: 400px;
-      min-height: 225px;
+      min-width: 28vw;
+      min-height: 25vh;
       right: 0;
-      margin: 2.5em 7em 0 0;
+      margin: 2.5em 2em 0 0;
       position: absolute;
       background: 
       linear-gradient(to top right,
@@ -330,7 +342,7 @@ img#icon {
 
   .page-content {
     display: flex;
-    margin-left: 6em;
+    margin-left: 10vw;
     flex-wrap: wrap;
     font-size: 1.3em;
     color: white;
@@ -348,8 +360,9 @@ img#icon {
       // margin-right: 5em;
     }
     .iterator {
-      min-width: 200px;
-      height: 250px;
+      min-width: 150px;
+      min-height: 250px;
+      width: 10%;
       background: 
       linear-gradient(to top left,
       rgba(255,255,255,0) 0%,
@@ -375,7 +388,7 @@ img#icon {
       padding-left: 2em;
       position: relative;
       margin-left: 2em;
-      max-width: 900px;
+      max-width: 820px;
       margin-top: 1em;
       width: 100%;
       .back-btn {
