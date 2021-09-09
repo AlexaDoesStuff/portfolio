@@ -39,7 +39,7 @@ const PageContent = ( props ) => {
       <div className="col-2"></div>
       <div className="buttons">
         <button 
-          onClick={() => ((current == 0) ? setCurrent(info.length) : setCurrent(current - 1))}
+          onClick={() => ((current == 0) ? setCurrent(info.length - 1) : setCurrent(current - 1))}
           className="back-btn">
           <div className="left-line"></div>
           back
