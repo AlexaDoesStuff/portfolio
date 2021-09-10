@@ -14,8 +14,18 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
+}
+
+body::before {
+  content: "";
   background: url('./assets/images/bg_2400x1600.png');
   background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
 }
 
 code {
