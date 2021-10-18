@@ -1,56 +1,37 @@
 import React from 'react'
 
-import Disc from '../components/visuals/disc.js';
+import StaticImages from '../components/visuals/images.js';
+import Contents from '../components/visuals/contents.js';
 
 export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      discs: ['resume', 'volunteer', 'more'],
-    }
-    this.createDisc = this.createDisc.bind(this);
-  }  
-
-  createDisc = ( names ) => {
-    var array = [];
-    for(var i = 0; i < names.length; i++) {
-      array.push(<Disc name={names[i]} />)
-    }
-    return array;
-  }
-
   render() {
     return (
       <div className="home">
-        <div className="window col-md-5">
-          <div className="name-desc">
-            <span id="name">
-              <span id="first">Alexa</span> < br/>
-              <span id="last">Javellana</span>
-            </span>
-            <p className="desc"> 
-              A front-end engineer with a love for 
-              beautiful things. Let’s create new 
-              experiences in this digital world.
-            </p>
-          </div>
+        <div className="top">
+          <div className="line"></div>
         </div>
-        {/* <div className="contents">
-          <div className="name-desc">
-            <span id="name">
-              <span id="first">Alexa</span> < br/>
-              <span id="last">Javellana</span>
-            </span>
-            <p className="desc"> 
-              A front-end engineer with a love for 
-              beautiful things. Let’s create new 
-              experiences in this digital world.
-            </p>
+        <div className="container">
+          <div className="main-body">
+            <div className="left">
+              <div className="name">
+                'Alexa Javellana
+              </div>
+              <div className="description-block">
+                <div className="vert-line"></div>
+                <div className="description">
+                  A software engineer (front-end focus) that loves beautiful things. 
+                  Let’s create new experiences in this digital world.
+                </div>
+              </div>
+            </div>
+            
+            <div className="right">
+              <Contents />
+            </div>
           </div>
-        </div> */}
-        <div className="disc-container col col-md-6 float-md-end">
-          {this.createDisc(this.state.discs)}
+          <StaticImages />
         </div>
+
       </div>
     )
   }

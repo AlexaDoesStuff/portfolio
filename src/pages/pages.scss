@@ -1,150 +1,102 @@
+:root {
+  --main-bg-color: #440BD4;
+  --font-color: #fff;
+  --white: #fff;
+}
+
 .home {
-  #name {
-    font-size: 4em;
-    line-height: .8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    line-height: 1em;
-  }
-  p.desc {
-    width: 100%;
-    font-size: 2em;
-    color: white;
-    padding-top: 1em;
-    line-height: 1.5em;
-  }
-  .window {
-    height: 98vh;
-    width: 95vw;
-    position: absolute;
-    border: 0;
-    box-sizing: border-box;
-    margin: .5rem;
-    border: 1px solid white;
-    border-radius: 300px 300px 0 0;
-    text-align: center;
-  }
-}
-
-//Bg for all pages
-.resume,
-.volunteer,
-.more, 
-.home {
-  max-width: 1440px;
-  max-height: 700px;
-}
-
-.more {
-  .content-block {
-    flex-direction: column;
-  }
-  .page-header .title {
-    line-height: .9em;
-    padding-top: 5vh;
-  }
-  .blurb {
-    margin: 1em 0 0 .9em;
-    color: white;
-    font-size: 1.3em;
-    height: 45vh;
-    overflow-y: scroll;
-  }
-}
-
-@media (max-width: 1025px) {
-  .more .blurb {
-    width: 90vw;
-  }
-}
-
-.more .art {
-  background: linear-gradient(to right, #D2FACD, #CDFAEC , #F8FACD, #FACDCD, #ECCDFA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 5s ease-in-out infinite;
-  background-size: 400% 100%;
-
-}
-
-@keyframes rainbow_animation {
-  0%,100% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 100% 0;
-  }
-}
-
-
-@media (min-width: 1025px) {
-  .home {
-    .name-desc {
-      margin: 25% 0 0 15%;
-    }
-    p.desc {
-      width: 450px;
-      font-size: 2em;
-      padding-top: .5em;
-    }
-    .contents {
-      text-align: unset;
-      padding: 7.8em 0 0 5em;
-    }
-    #name {
-      font-size: 8em;
-      font-weight: 700;
-      line-height: 1em;
-      letter-spacing: 5px;
-    }
-    .window {
-      width: 50vw;
-      max-width: 640px;
-      max-height: 900px;
-      position: relative;
-      text-align: unset;
-    }
-  }
-
-  .more {
-    .content-block {
-      flex-direction: row;
-    }
-    .page-header .title {
-      line-height: .9em;
-    }
-    .blurb {
-      margin-top: 2em;
-      color: white;
-      font-size: 1em;
-    }
-  }
-
-  .resume,
-  .volunteer,
-  .more, 
-  .home {
-    width: 85vw;
-    height: 90vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
+  background-color: var(--main-bg-color);
+  // height: 100vh;
+  min-height: 667px;
+  width: 100vw;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  .top {
     display: flex;
-    flex-direction: column;
     justify-content: center;
   }
-
-  .resume,
-  .volunteer {
-    margin-top: -3em;
+  .line {
+    width: 95%;
+    max-width: 1320px;
+    height: 1px;
+    border-bottom: 1px solid var(--white);
+    top: 0;
+    margin: 1em 0 1em 0;
   }
+  .left .name {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 200px;
+    line-height: 30px;
+    font-family: 'Helvetica Neue';
+  }
+  .description {
+    max-width: 500px;
+    max-height: 200px;
+    font-size: 1.5em;
+    line-height: 20px;
+    padding-left: 20px;
+    font-family: 'HelveticaNeue-Light';
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .description-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    .vert-line {
+      width: 1px;
+      border-left: 1px solid white;
+    }
+  }
+  .left {
+    height: 25%;
+  }
+  .right {
+    height: 70%;
+  }
+  .contents {
+    height: 100%;
+  }
+}
 
+
+@media (min-width: 768px) {
   .home {
-    width: 100vw !important;
+    .line {
+      margin: 2em 0 2em 0;
+    }
+    .left .name {
+      font-size: 5em;
+      text-transform: uppercase;
+      line-height: 70px;
+    }
+    .description {
+      max-width: 600px;
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+    // .main-body {
+    //   flex-direction: row;
+    // }
   }
-  
+}
+
+@media (min-width: 1024px) {
+  .home {
+    .left .name {
+      font-size: 6.5em;
+      line-height: 90px;
+    }
+  }
 }

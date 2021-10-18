@@ -8,8 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter as Router } from 'react-router-dom';
 
 render(
-  <Router>
-    <App />
-  </Router>,
+  <App />,
   document.querySelector('#root')
 )
